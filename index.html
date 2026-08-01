@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avyakta — civic infrastructure auditing</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+  <div class="topbar">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="12" stroke="#F0A63B" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="3.5" fill="#F0A63B"/>
+      </svg>
+      Avyakta
+      <span class="brand-sub">Civ-OS</span>
+    </a>
+  </div>
+
+  <!-- Signature element: a road cross-section with a glowing latent defect,
+       revealed only once you look closely. Ties to "avyakta" = the unmanifest. -->
+  <svg class="road-strip" viewBox="0 0 1072 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Road cross-section with a highlighted latent defect">
+    <rect x="0" y="40" width="1072" height="14" fill="#232427"/>
+    <rect x="0" y="54" width="1072" height="4" fill="#33363A"/>
+    <path d="M470 40 Q500 40 508 60 Q516 78 540 78 Q556 78 560 60 Q564 44 590 40" fill="#17181A" stroke="none"/>
+    <circle class="pulse" cx="527" cy="62" r="4" fill="#F0A63B"/>
+    <line x1="527" y1="62" x2="527" y2="20" stroke="#46494E" stroke-width="1" stroke-dasharray="2 3"/>
+    <text x="533" y="16" font-family="IBM Plex Mono, monospace" font-size="11" fill="#A3A6A8">latent defect, unconfirmed</text>
+  </svg>
+
+  <h1 style="font-family:var(--font-display); font-size:28px; font-weight:600; margin:8px 0 4px;">
+    Civic infrastructure, made visible
+  </h1>
+  <p style="color:var(--text-secondary); font-size:15px; max-width:560px; margin:0;">
+    Avyakta turns crowdsourced fleet telemetry into verified proof of road condition —
+    and ties that proof directly to contractor payment.
+  </p>
+
+  <div class="section-label">Portals</div>
+  <div class="grid">
+    <a href="rider.html" class="card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M5.5 17.5L9 8h5l3 5h2M9 8l2 5h4"/></svg>
+      <div class="card-title">Rider portal</div>
+      <div class="card-desc">Fleet riders whose telemetry powers detection.</div>
+    </a>
+
+    <a href="contractor.html" class="card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-5h4v5"/></svg>
+      <div class="card-title">Contractor portal</div>
+      <div class="card-desc">Track repair status, material use, and escrow.</div>
+    </a>
+
+    <a href="municipal.html" class="card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6"/><circle cx="12" cy="10" r="1.4" fill="currentColor" stroke="none"/></svg>
+      <div class="card-title">Municipal portal</div>
+      <div class="card-desc">Oversight, audit trail, and final review.</div>
+    </a>
+  </div>
+
+  <div class="section-label">Modules</div>
+  <div class="grid">
+    <a href="road-model.html" class="card card--active">
+      <span class="pill pill--live"><span class="pill--dot"></span>Live</span>
+      <div class="card-title">Road model</div>
+      <div class="card-desc">Telemetry ingestion, filtering, and defect detection pipeline.</div>
+    </a>
+
+    <div class="card card--disabled">
+      <span class="pill pill--soon">Coming soon</span>
+      <div class="card-title">Escrow verification</div>
+      <div class="card-desc">Persistence-checked payment release tied to confirmed repairs.</div>
+    </div>
+
+    <div class="card card--disabled">
+      <span class="pill pill--soon">Coming soon</span>
+      <div class="card-title">Contractor accountability</div>
+      <div class="card-desc">Material usage ratio and repair durability scoring.</div>
+    </div>
+  </div>
+
+  <footer class="foot">Avyakta / Civ-OS — internal build. Not for public deployment yet.</footer>
+</div>
+
+</body>
+</html>

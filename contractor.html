@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contractor portal — Avyakta</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="portal-wrap">
+  <div class="portal-card">
+    <div class="portal-eyebrow">Contractor portal</div>
+    <h1 class="portal-title">Log in to your contract dashboard</h1>
+    <p class="portal-desc">See confirmed repair status, material usage ratio, and escrow standing for your active contracts.</p>
+
+    <form id="contractorForm">
+      <div class="field">
+        <label for="contractorId">Contractor ID</label>
+        <input id="contractorId" type="text" placeholder="e.g. MCD-CT-0042" required>
+      </div>
+      <div class="field">
+        <label for="contractorPass">Password</label>
+        <input id="contractorPass" type="password" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn">Log in</button>
+    </form>
+
+    <p class="note">This is a placeholder form for the initial build — no authentication is wired up yet.</p>
+    <a href="index.html" class="back-link">&larr; Back to Avyakta</a>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

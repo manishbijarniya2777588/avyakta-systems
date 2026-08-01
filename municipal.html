@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Municipal portal — Avyakta</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="portal-wrap">
+  <div class="portal-card">
+    <div class="portal-eyebrow">Municipal portal</div>
+    <h1 class="portal-title">Officer / admin access</h1>
+    <p class="portal-desc">City-wide road status, escrow decisions awaiting sign-off, and contractor review queue.</p>
+
+    <form id="municipalForm">
+      <div class="field">
+        <label for="officerId">Officer ID</label>
+        <input id="officerId" type="text" placeholder="e.g. MCD-OFF-1187" required>
+      </div>
+      <div class="field">
+        <label for="officerPass">Password</label>
+        <input id="officerPass" type="password" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn">Log in</button>
+    </form>
+
+    <p class="note">This is a placeholder form for the initial build — no authentication is wired up yet.</p>
+    <a href="index.html" class="back-link">&larr; Back to Avyakta</a>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

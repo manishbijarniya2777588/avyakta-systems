@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rider portal — Avyakta</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="portal-wrap">
+  <div class="portal-card">
+    <div class="portal-eyebrow">Rider portal</div>
+    <h1 class="portal-title">Log in to sync telemetry</h1>
+    <p class="portal-desc">Riders don't see road scores here — this account just links your device's recorded rides to your fleet ID.</p>
+
+    <form id="riderForm">
+      <div class="field">
+        <label for="riderPhone">Phone number</label>
+        <input id="riderPhone" type="tel" placeholder="+91 00000 00000" required>
+      </div>
+      <div class="field">
+        <label for="fleetPartner">Fleet partner</label>
+        <select id="fleetPartner">
+          <option>Swiggy</option>
+          <option>Zomato</option>
+          <option>Amazon</option>
+          <option>Independent / self-recorded</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Continue</button>
+    </form>
+
+    <p class="note">This is a placeholder form for the initial build — no authentication is wired up yet.</p>
+    <a href="index.html" class="back-link">&larr; Back to Avyakta</a>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

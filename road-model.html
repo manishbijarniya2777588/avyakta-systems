@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Road model — Avyakta</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+  <div class="topbar">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="12" stroke="#F0A63B" stroke-width="1.5"/>
+        <circle cx="14" cy="14" r="3.5" fill="#F0A63B"/>
+      </svg>
+      Avyakta
+      <span class="brand-sub">Civ-OS</span>
+    </a>
+    <span class="pill pill--live"><span class="pill--dot"></span>Road model — live</span>
+  </div>
+
+  <h1 style="font-family:var(--font-display); font-size:26px; font-weight:600; margin:28px 0 4px;">
+    Road model
+  </h1>
+  <p style="color:var(--text-secondary); font-size:15px; max-width:600px; margin:0 0 8px;">
+    Telemetry ingestion &rarr; signal filtering &rarr; anomaly thresholds &rarr; spatial clustering.
+    This page is the front end for that pipeline as it gets built out.
+  </p>
+
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-value" id="statRides">0</div>
+      <div class="stat-label">Rides ingested</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="statFlags">0</div>
+      <div class="stat-label">Anomalies flagged</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="statConfirmed">0</div>
+      <div class="stat-label">Confirmed defects</div>
+    </div>
+  </div>
+
+  <div class="empty-panel">
+    <h3>No pipeline output connected yet</h3>
+    <p>Once the Python pipeline (filtering &rarr; thresholds &rarr; DBSCAN) exports results as JSON,
+       point this page at that file and the stats and map above will populate.</p>
+  </div>
+
+  <a href="index.html" class="back-link">&larr; Back to Avyakta</a>
+  <footer class="foot">Avyakta / Civ-OS — internal build. Not for public deployment yet.</footer>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
